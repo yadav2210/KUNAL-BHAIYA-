@@ -36,12 +36,12 @@ jobs:
           GITHUB_PAGES: true
 
       - name: Add Pages configuration file
-        run: touch out/.nojekyll
+        run: touch .next-gh-pages/.nojekyll
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: out
+          path: .next-gh-pages
 
   deploy:
     environment:
