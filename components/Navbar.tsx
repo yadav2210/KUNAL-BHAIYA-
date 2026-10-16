@@ -2,7 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight, Menu, X } from "lucide-react";
+import logo from "../images/WhatsApp Image 2026-10-15 at 21.10.04.jpeg";
 
 const NAV_LINKS = [
   { href: "#home", label: "Home" },
@@ -64,14 +66,15 @@ export default function Navbar() {
             className="flex items-center space-x-2 group focus:outline-none"
             aria-label="Kunal - Video Editor & Colourist"
           >
-            <div className="flex flex-col">
-              <span className="font-extrabold text-lg md:text-xl tracking-tight text-[#111111] group-hover:text-[#FF8500] transition-colors leading-none">
-                KUNAL.
-              </span>
-              <span className="text-[10px] md:text-[11px] font-semibold tracking-[0.2em] text-[#666666] uppercase mt-1">
-                VIDEO EDITOR & COLOURIST
-              </span>
-            </div>
+            <Image
+              src={logo}
+              alt="Kunal - Video Editor & Colourist"
+              className="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover"
+              priority
+            />
+            <span className="font-extrabold text-lg md:text-xl tracking-tight text-[#111111]">
+              KUNAL
+            </span>
           </Link>
 
           {/* Desktop Navigation Links */}
@@ -101,7 +104,9 @@ export default function Navbar() {
           {/* Far Right CTA: "Let's Talk" */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="#contact"
+              href="https://wa.me/918602424055"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center space-x-1.5 px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#111111] text-white hover:bg-[#FF8500] hover:text-black transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 active:translate-y-0"
             >
               <span>Let&apos;s Talk</span>
@@ -140,7 +145,9 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="https://wa.me/918602424055"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setMobileMenuOpen(false)}
             className="w-full text-center py-3 rounded-full text-xs font-bold uppercase tracking-wider bg-[#111111] text-white hover:bg-[#FF8500] hover:text-black transition-colors"
           >

@@ -5,7 +5,6 @@ import Hero from "../components/Hero";
 import VideoShowcase from "../components/VideoShowcase";
 import Services from "../components/Services";
 import About from "../components/About";
-import Clients from "../components/Clients";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import VideoModal from "../components/VideoModal";
@@ -38,9 +37,6 @@ export default function Home() {
 
       {/* 04 — ABOUT / STORY SECTION ("Watch My Story" + Curved Arrow + 16:9 Video) */}
       <About onPlayStory={handleOpenVideo} />
-
-      {/* 05 — CLIENTS & BRANDS SECTION */}
-      <Clients />
 
       {/* 06 — FEATURED PROJECTS SECTION (Light Gray Container + Category Tabs + 3-Card Carousel) */}
       <Projects onSelectProject={handleOpenVideo} />

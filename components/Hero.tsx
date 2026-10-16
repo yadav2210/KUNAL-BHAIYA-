@@ -52,7 +52,9 @@ export default function Hero({ onExploreClick, onContactClick }: HeroProps) {
           </a>
 
           <a
-            href="#contact"
+            href="https://wa.me/918602424055"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={onContactClick}
             className="w-full sm:w-auto inline-flex items-center justify-center space-x-2.5 px-8 py-4 rounded-full bg-white text-[#111111] border border-[#EAEAEA] text-sm font-semibold tracking-wide hover:border-[#111111] hover:bg-[#F7F7F7] transition-all duration-300 transform hover:-translate-y-0.5"
           >
