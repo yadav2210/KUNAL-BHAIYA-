@@ -30,21 +30,20 @@ export const CATEGORIES = [
 export const FEATURED_SHOWCASE_VIDEOS = [
   {
     id: "showcase-channel",
-    title: "Explore My YouTube Channel",
-    client: "Kunal",
-    category: "YouTube Channel",
-    badge: "Creator Channel",
+    title: "Long Form Edit | Quest 5 | Aevy Cohort 14",
+    client: "Kunal Singh",
+    category: "YouTube Video",
+    badge: "LONG-FORM EDIT",
     aspectRatio: "9:16",
     rotation: -3,
-    thumbnail: "https://img.youtube.com/vi/j7R27wLLBr0/hqdefault.jpg",
-    videoUrl: "https://youtube.com/@ksnamli?si=Xhzz7JyeufiHqJYS",
-    embedUrl: "",
-    channelUrl: "https://youtube.com/@ksnamli?si=Xhzz7JyeufiHqJYS",
-    description: "Visit my YouTube channel to explore my video editing and storytelling work.",
+    thumbnail: "https://img.youtube.com/vi/J-hbusdEW3A/maxresdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=J-hbusdEW3A",
+    embedUrl: "https://www.youtube-nocookie.com/embed/J-hbusdEW3A?autoplay=1",
+    description: "Corporate Films",
     role: "Video Editor & Colourist",
     deliverables: ["Video Editing", "Colour Grading", "Visual Storytelling"],
     year: "2026",
-    views: "Visit Channel"
+    views: "Watch Video"
   },
   {
     id: "showcase-video",
