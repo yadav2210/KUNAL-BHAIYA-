@@ -38,7 +38,7 @@ export default function VideoShowcase({ onSelectVideo }: VideoShowcaseProps) {
                 onMouseEnter={() => setHoveredCard(item.id)}
                 onMouseLeave={() => setHoveredCard(null)}
                 onClick={() => {
-                  if (item.channelUrl) {
+                  if ("channelUrl" in item && typeof item.channelUrl === "string" && item.channelUrl) {
                     window.open(item.channelUrl, "_blank", "noopener,noreferrer");
                     return;
                   }
